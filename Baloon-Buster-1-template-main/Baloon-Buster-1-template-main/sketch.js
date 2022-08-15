@@ -2,9 +2,7 @@ var bow , arrow,  scene;
 var bowImage, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage;
 var select_balloon=1
 var score=0;
-drawSprites("text");
-textsize(20);
-text("score:"+ score,270,30);
+
 
 function preload(){
   
@@ -99,9 +97,10 @@ function draw() {
             // }
 
 }
-    
-  drawSprites();
+drawSprites();
+text("Score: "+ score, 300,50);
 }
+
 
 
 // Creating  arrows for bow
